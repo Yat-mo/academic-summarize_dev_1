@@ -1,0 +1,12 @@
+paper_summarizer/
+├── app.py              # Streamlit主程序
+├── utils/
+│   ├── pdf_processor.py    # PDF处理模块
+│   ├── text_splitter.py    # 文本分割模块
+│   ├── openai_handler.py   # OpenAI API处理
+│   ├── formatter.py        # 格式化工具
+│   ├── exporter.py         # 导出功能
+│   └── mindmap_generator.py # 思维导图生成
+├── config.py           # 配置文件
+├── prompts.py         # 提示词模板
+└── requirements.txt    # 依赖包 
