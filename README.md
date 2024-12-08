@@ -7,7 +7,7 @@
 ## 核心功能 🎯
 
 - 🔄 **批量处理**：支持PDF和Word格式论文的批量导入和处理
-- 🧠 **智能分析**：使用 GPT 模型（默认 gpt-3.5-turbo，可选 gpt-4）进行内容分析
+- 🧠 **智能分析**：使用最新的GPT模型（gpt-4o-mini-2024-07-18）进行内容分析
 - 📊 **自动总结**：生成包含以下内容的结构化总结：
   - 研究目标和背景
   - 主要方法和创新点
@@ -69,8 +69,6 @@
 
 ### 1. 环境准备
 
-确保您的系统已安装 Python 3.8 或更高版本。
-
 首先克隆项目到本地：
 ```bash
 git clone https://github.com/Yat-mo/academic-summarize_dev_1
@@ -118,8 +116,7 @@ pip install -r requirements.txt
 
 3. 模型说明：
    ```python
-   # 默认使用 gpt-3.5-turbo 模型
-   # 如需更好的效果，可以使用 gpt-4
+   # 默认使用 gpt-4o-mini-2024-07-18 模型
    # 如遇到 rate limit，建议：
    # 1. 等待约一小时后重试
    # 2. 切换到其他 API base
@@ -128,16 +125,14 @@ pip install -r requirements.txt
 
 ## 使用指南 📖
 
-本项目是一个论文批量总结助手，主要功能包括：
-- 支持批量上传 PDF 和 Word 格式的论文
-- 自动生成论文摘要和关键内容总结
-- 支持导出所有总结为 Word 文档
-- 保存历史记录，方便随时查看
-
 ### 1. 启动应用
 
 ```bash
+# 方法1：直接运行
 streamlit run app.py
+
+# 方法2：如果方法1不可用，使用完整路径
+.venv/bin/streamlit run app.py
 ```
 
 ### 2. 使用流程
