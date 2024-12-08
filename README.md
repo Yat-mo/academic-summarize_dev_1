@@ -128,7 +128,11 @@ pip install -r requirements.txt
 ### 1. 启动应用
 
 ```bash
+# 方法1：直接运行
 streamlit run app.py
+
+# 方法2：如果方法1不可用，使用完整路径
+.venv/bin/streamlit run app.py
 ```
 
 ### 2. 使用流程
