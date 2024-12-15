@@ -1,12 +1,17 @@
-paper_summarizer/
-├── app.py              # Streamlit主程序
+academic-summarize_dv/
+├── app.py                # Streamlit主程序，包含Web界面和主要业务逻辑
+├── config.py            # 配置文件，包含API和处理参数设置
+├── prompts.py           # 主要提示词模板
+├── prompts_popular.py   # 常用提示词模板
 ├── utils/
-│   ├── pdf_processor.py    # PDF处理模块
-│   ├── text_splitter.py    # 文本分割模块
-│   ├── openai_handler.py   # OpenAI API处理
-│   ├── formatter.py        # 格式化工具
-│   ├── exporter.py         # 导出功能
-│   └── mindmap_generator.py # 思维导图生成
-├── config.py           # 配置文件
-├── prompts.py         # 提示词模板
-└── requirements.txt    # 依赖包 
+│   ├── pdf_processor.py     # PDF文件处理模块
+│   ├── word_processor.py    # Word文件处理模块
+│   ├── openai_handler.py    # OpenAI API交互处理
+│   ├── formatter.py         # 文本格式化工具
+│   ├── exporter.py         # 导出功能模块
+│   └── mindmap_generator.py # 思维导图生成器
+├── exports/             # 导出文件存储目录
+├── .env                # 环境变量配置
+├── .gitignore         # Git忽略文件
+├── README.md          # 项目说明文档
+└── requirements.txt    # Python依赖包列表
