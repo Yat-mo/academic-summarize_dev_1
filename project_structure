@@ -1,0 +1,18 @@
+academic-summarize/
+├── app.py              # Streamlit主应用程序
+├── config.py           # 配置文件
+├── prompts.py          # 提示词模板
+├── requirements.txt    # 项目依赖
+├── README.md          # 项目说明文档
+├── .env               # 环境变量配置
+└── utils/             # 工具模块目录
+    ├── pdf_processor.py     # PDF文件处理
+    ├── word_processor.py    # Word文件处理
+    ├── text_processor.py    # 文本处理基类
+    ├── file_processor.py    # 文件处理基类
+    ├── text_splitter.py     # 文本分割工具
+    ├── openai_handler.py    # AI API处理
+    ├── batch_processor.py   # 批量处理管理
+    ├── mindmap_generator.py # 思维导图生成
+    ├── exporter.py         # 导出功能
+    └── exceptions.py       # 自定义异常类
